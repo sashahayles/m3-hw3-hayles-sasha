@@ -1,0 +1,14 @@
+nav {
+  height: 75px;
+  background-color: #F8DF1F;
+  padding-top: 1%;
+}
+a {
+  color: #080801;
+}
+h1 {
+  color: #EE252F;
+}
+nav :hover {
+  color: #EE252F;
+}
