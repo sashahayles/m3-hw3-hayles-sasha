@@ -1,14 +1,21 @@
 nav {
   height: 75px;
-  background-color: #F8DF1F;
+  background-color: #f8df1f;
   padding-top: 1%;
+}
+nav :hover {
+  color: #ee252f;
 }
 a {
   color: #080801;
 }
 h1 {
-  color: #EE252F;
+  color: #ee252f;
 }
-nav :hover {
-  color: #EE252F;
+h2 {
+  color: #080801;
+}
+footer {
+  height: 100px;
+  background-color: #080801;
 }
