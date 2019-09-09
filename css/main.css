@@ -1,21 +1,55 @@
 nav {
-  height: 75px;
+  height: 100px;
   background-color: #f8df1f;
-  padding-top: 1%;
-}
-nav :hover {
-  color: #ee252f;
+  padding: 2% 3.3% !important;
 }
 a {
   color: #080801;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+a:hover {
+  color: #ee252f;
+}
+.jumbotron {
+  background-image: url('img/banner-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.jumbotron img {
+  width: 19%;
+}
+.row {
+  padding: 4%;
+  margin: 0 !important;
 }
 h1 {
   color: #ee252f;
 }
 h2 {
   color: #080801;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+h2 span {
+  color: #ee252f;
+}
+img {
+  width: 60%;
+}
+button {
+  background-color: #f8df1f !important;
+  color: #080801 !important;
+  border: none !important;
 }
 footer {
   height: 100px;
   background-color: #080801;
+  border-top: 20px solid #f8df1f;
+}
+footer img {
+  width: 15%;
+  padding: 1% 0;
 }

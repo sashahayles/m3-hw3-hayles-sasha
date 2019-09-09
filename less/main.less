@@ -1,26 +1,68 @@
 @import "variables";
 
-nav {
-  height: 75px;
-  background-color: @yellow-primary;
-  padding-top:1%;
+//mixins
+#fontsize() {
+  .headings {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
 }
-nav :hover {
-  color:@red-secondary;
+  .links {
+    font-size:18px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+nav {
+  height: 100px;
+  background-color: @yellow-primary;
+  padding: 2% 3.3% !important;
 }
 a {
     color: @black-primary;
+    #fontsize.links();
+    &:hover {
+      color: @red-secondary;
+    }
   }
-
+  .jumbotron {
+  	background-image: url('img/banner-bg.png');
+  	background-size: cover;
+  	background-repeat: no-repeat;
+    img {
+      width:19%;
+    }
+  }
+.row{
+  padding:4%;
+  margin:0 !important;
+}
 h1 {
   color: @red-secondary;
 }
 
 h2 {
   color: @black-primary;
+  #fontsize.headings();
+  span {
+    color:@red-secondary;
+  }
+}
+img {
+  width:60%;
+}
+button {
+  background-color:@yellow-primary !important;
+  color: @black-primary !important;
+  border: none !important;
 }
 
-footer{
+footer {
   height:100px;
   background-color: @black-primary;
+  border-top:20px solid @yellow-primary;
+  img {
+    width:15%;
+    padding: 1% 0;
+  }
 }
