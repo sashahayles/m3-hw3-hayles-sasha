@@ -4,3 +4,5 @@ that it was because I was missing the "../" in the image link.
 
 The other issue I experienced was adding the background color and opacity to the Jumbotron 
 image. I also had a little trouble using mix-ins. 
+
+No outside resources were used
