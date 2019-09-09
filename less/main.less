@@ -13,6 +13,22 @@
     font-family: 'Roboto', sans-serif;
   }
 }
+#fontsubsize{
+  .para{
+    font-size: 16px;
+    color: @black-primary;
+    font-weight:400;
+    font-family: 'Roboto', sans-serif !important;
+  }
+  .buttons{
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+
+  }
+}
+//mixins end
 nav {
   height: 100px;
   background-color: @yellow-primary;
@@ -26,11 +42,13 @@ a {
     }
   }
   .jumbotron {
-  	background-image: url('img/banner-bg.png');
-  	background-size: cover;
+  	background-image: url('../img/banner-bg.png');
   	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 33%;
     img {
-      width:19%;
+      width:40%;
     }
   }
 .row{
@@ -48,13 +66,22 @@ h2 {
     color:@red-secondary;
   }
 }
+p{
+  #fontsubsize.para();
+}
 img {
-  width:60%;
+  width:80%;
+}
+@media (max-width:500px){
+   article img{
+    padding-top:5%;
+  }
 }
 button {
   background-color:@yellow-primary !important;
   color: @black-primary !important;
   border: none !important;
+    #fontsubsize.buttons();
 }
 
 footer {
@@ -64,5 +91,11 @@ footer {
   img {
     width:15%;
     padding: 1% 0;
+  }
+  @media (max-width:500px){
+   img{
+      width:20%;
+      padding-top:4%;
+    }
   }
 }

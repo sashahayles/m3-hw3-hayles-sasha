@@ -1,3 +1,15 @@
+#fontsubsize .para {
+  font-size: 16px;
+  color: #080801;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif !important;
+}
+#fontsubsize .buttons {
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+}
 nav {
   height: 100px;
   background-color: #f8df1f;
@@ -13,12 +25,14 @@ a:hover {
   color: #ee252f;
 }
 .jumbotron {
-  background-image: url('img/banner-bg.png');
-  background-size: cover;
+  background-image: url('../img/banner-bg.png');
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 33%;
 }
 .jumbotron img {
-  width: 19%;
+  width: 40%;
 }
 .row {
   padding: 4%;
@@ -36,13 +50,28 @@ h2 {
 h2 span {
   color: #ee252f;
 }
+p {
+  font-size: 16px;
+  color: #080801;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif !important;
+}
 img {
-  width: 60%;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  article img {
+    padding-top: 5%;
+  }
 }
 button {
   background-color: #f8df1f !important;
   color: #080801 !important;
   border: none !important;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
 }
 footer {
   height: 100px;
@@ -52,4 +81,10 @@ footer {
 footer img {
   width: 15%;
   padding: 1% 0;
+}
+@media (max-width: 500px) {
+  footer img {
+    width: 20%;
+    padding-top: 4%;
+  }
 }
